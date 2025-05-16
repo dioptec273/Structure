@@ -1,0 +1,27 @@
+Début
+    Définir tableau1 ← [3, 1, 7, 9]
+    Définir tableau2 ← [2, 4, 1, 9, 3]
+    Définir somme ← 0
+
+    Pour i de 0 à longueur(tableau1) - 1
+        Définir trouvé ← faux
+        Pour j de 0 à longueur(tableau2) - 1
+            Si tableau1[i] = tableau2[j]
+                trouvé ← vrai
+        Fin Pour
+        Si trouvé = faux
+            somme ← somme + tableau1[i]
+    Fin Pour
+
+    Pour i de 0 à longueur(tableau2) - 1
+        Définir trouvé ← faux
+        Pour j de 0 à longueur(tableau1) - 1
+            Si tableau2[i] = tableau1[j]
+                trouvé ← vrai
+        Fin Pour
+        Si trouvé = faux
+            somme ← somme + tableau2[i]
+    Fin Pour
+
+    Afficher "Somme des éléments distincts :", somme
+Fin
